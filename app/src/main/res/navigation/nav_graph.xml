@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/gnomeListFragment">
+
+    <fragment
+        android:id="@+id/gnomeListFragment"
+        android:name="com.example.kavakexam.presentation.gnome.list.GnomeListFragment"
+        android:label="@string/gnomes_title"
+        tools:layout="@layout/fragment_gnome_list">
+        <action
+            android:id="@+id/action_gnomeListFragment_to_gnomeDetailFragment"
+            app:destination="@id/gnomeDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gnomeDetailFragment"
+        android:name="com.example.kavakexam.presentation.gnome.detail.GnomeDetailFragment"
+        android:label="@string/gnome_detail_title"
+        tools:layout="@layout/fragment_gnome_detail">
+
+        <argument
+            android:name="gnome"
+            app:argType="com.example.kavakexam.core.domain.Gnome" />
+
+    </fragment>
+</navigation>

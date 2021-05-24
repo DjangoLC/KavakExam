@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">KavakExam</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="gnome_detail_title">Detail</string>
+    <string name="gnomes_title">Gnomes</string>
+    <string name="generic_error_message">An error occurs when load your data, please try later...</string>
+</resources>
